@@ -1,0 +1,18 @@
+Step 1 Create Files with Dummy data
+------------------------------------------------------------
+We created three files: file1.txt, file2.txt, and file3.txt. They all are plain text files with some dummy data.You can modify the data in these files or create new ones based on your requirements.
+
+Step 2 Traverse Directories 
+---------------------------------------------
+The os.walk function traverses through the current directory (".") and all its subdirectories. The files list contains the names of all the files in each directory, which we then use to create a full file path with os.path.join. We add each file path to the files_dict dictionary and initialize its count to 0.
+
+After traversing through all the directories, we print the number of files found and also print out all the file paths stored in the files_dict. Note that we are not yet counting the unique words in each file or updating the count in files_dict, but that can be added later.
+
+Step 3 Extract Unique Vocabulary 
+-----------------------------------------------------
+This code will traverse all directories and files in the current working directory and its subdirectories. For each text file it encounters, it will read the contents of the file, split the contents into individual words, and add the unique words to the unique_words_set set.
+
+At the end of the code, the set is printed out, which contains all the unique words in every text file in the directory and its subdirectories.
+
+Step 4 Create Term Document Matrix
+------------------------------------------------------------
